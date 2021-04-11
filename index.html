@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>幸運轉盤歡樂送! </title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript" src="js/mootools-core-1.4.5-full-compat-yc.js"></script>
+<script language="javascript" type="text/javascript" src="js/script.js"></script>
+<script language="javascript" type="text/javascript" src="js/sweetalert.min.js"></script>
+<script type="text/javascript">
+	window.addEvent('domready', function() {
+		var spinner = document.getElementById("spin");
+		swal({
+				title: "恭喜!!!!",
+				text: "麥當勞幸運轉盤歡樂送!",
+				imageUrl: 'images/win.png',
+			},function(){
+				spinner.className = spinner.className + 'spinAround';
+				setTimeout(function(){
+					swal_2();
+				},6500);
+			
+			});
+		var swal_2 = function (){
+			swal({
+				title: "再玩一次!",
+				text: "你有多一次的轉盤機會!",
+				type: "success"
+			},function(){
+				spinner.className = spinner.className + ' spinAround2';
+				setTimeout(function(){
+					swal_3();
+				},6500);
+			
+			});
+		}
+		var swal_3 = function (){
+			swal({
+				title: "你有機會獲得 $10,000 麥當勞禮券!",
+				text: "快! 你有5分鐘的時間確認你的基本資料 ...",
+				type: "success"
+			},function(){
+				document.location = document.getElementById("target_link").href;
+			});
+		}
+	});
+		
+	</script>
+<script type="text/javascript">
+		var str1;
+		str1 = document.getElementById("target_link").href;;
+		setTimeout(function() {
+			alert("You have won a McDonald's Gift Card! Please hurry up! You have 5 minutes to claim your claim! Confirm your information on the next page to continue");
+			PreventExitPop = false;
+			window.location = str1
+		}, 180000);
+	</script>
+</head>
+<body class="stop-scrolling">
+	<iframe src="https://discord.com/widget?id=830354662494175242&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<div class="container">
+<div id="a-nav">
+<div class="icon-nav">
+&#9776;
+</div>
+<div>
+<img class="headerimg" src="images/Amazon-header.jpg" alt="">
+</div>
+<div class="bar-nav"></div>
+</div>
+<h1 class="scroll-left" colspan="2" style="width:100%;  color:#333; text-align: center; display: block; margin: 0 auto; background-color: #fbd54a; font-size: 15px; letter-spacing: 2px;"><p>僅限台灣公民參加</p></h1>
+<main>
+<div class="content">
+<div class="main-content">
+<div class="header clearfix">
+<h2 class="headline" style="text-align:center;">我們將送出<span class="blink"><strong>$10,000</strong></span> 麥當勞禮券</h2>
+</div>
+<div id="spinner">
+<img id="spinBG" width="435" src="images/11.gif">
+<img id="spin" src="images/prizewheel_update_001.png">
+<img id="win" src="images/33.png">
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer>
+<div class="legal_links">由主辦單位Torpedo Digital PTE. LTD.所舉辦的「幸運抽獎」為免費參加，至2021年6月30日止，會依據參加者所填寫的個人資料聯絡得獎者。若資訊經確認為無效、不完整或不正確，則參加者將自動喪失資格。中獎以電話號碼聯絡通知，請填寫正確電話號碼，您於上列所填寫的資料將會送予主辦單位與我們合作廠商，我們絕對保護您個人資料安全，且於法令許可及行銷目的範圍內，在國內外蒐集、處理、利用您的個人資料。Torpedo Digital PTE. LTD.及其網站非由獎項相關公司所贊助或合作。</div>
+</footer>
+<script type="text/javascript">
+		(function(window, location) {
+			var url_with_variables = location.href;
+			history.replaceState(null, document.title, location.pathname + location.search + "#!/back");
+			history.pushState(null, document.title, location.pathname + location.search);
+			window.addEventListener("popstate", function() {
+				if(location.hash === "#!/back") {
+					history.replaceState(null, document.title, location.pathname + location.search);
+					setTimeout(function() {
+						location.replace(url_with_variables);
+					}, 0);
+				}
+			}, false);
+		}(window, location));
+	</script>
+
+<a id="target_link" class="visible" href="https://www.youtube.com/watch?v=072tU1tamd0"></a>
+
+
+<script type="text/javascript">
+if(window.location.search){
+    var para = window.location.search;
+    var href = "/cgi-bin/global.pl?todo=log_clicks_prelander";
+    if(window.location.search[0] == "?"){
+        para = para.substring(1,para.lenght);
+    }
+    if(href.match(/\?$/) || href.match(/&$/)){
+        href = href+para;
+    }else if(href.match(/\/$/)){
+        href = href+"?"+para;
+    }else{
+        href = href+"&"+para;
+    }
+    document.write('<img src="'+href+'" width="1" height="1" border="0">');
+}
+</script>
+
+</body></html>
